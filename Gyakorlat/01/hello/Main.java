@@ -3,6 +3,7 @@ public class Main{
         return 2;
     }
     
+    @SuppressWarnings("unused")
     public static void main(String[] args){
         int z = 100_000;
 
