@@ -11,14 +11,17 @@ public class sztringek2
     private static String verbing(String s)
     {
         int s_hossz = s.length();
-        if(s_hossz >= 3){
-            if(s.endsWith("ing")){
-                s = s + "ly";
-            }
-            else{
-                s = s + "ing";
-            }
+        if(s_hossz < 3){
+            return s;
         }
+
+        if(s.endsWith("ing")){
+            s = s + "ly";
+        }
+        else{
+            s = s + "ing";
+        }
+        
 
         return s;
     }
