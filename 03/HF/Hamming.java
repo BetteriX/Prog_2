@@ -16,17 +16,12 @@ public class Hamming {
             return -1;
         }
         else {
-            char[] ks_1_charArray = karakter_sorozat_1.toCharArray();
-            char[] ks_2_charArray = karakter_sorozat_2.toCharArray();
-
-            int tavolsag_sum = 0;
-            for (int i = 0; i < ks_1_hossz; i++) {
-                if (ks_1_charArray[i] == ks_2_charArray[i]) {
-                    tavolsag_sum++;
-                }
+            if (ks_1_hossz % 2 == 0) {
+                return ks_1_hossz / 2;
             }
-
-            return tavolsag_sum;
+            else {
+                return (ks_1_hossz / 2) + 1;
+            }
         }
     }
 }

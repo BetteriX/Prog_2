@@ -1,8 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Hamming h = new Hamming("toned", "roses");
+        //Hamming h = new Hamming("toned", "rosess");
+        //System.out.println("Hamming távolsága: " + h.Hamming_tavolsag());
 
+        FizzBuzz fb = new FizzBuzz(100);
 
-        System.out.println("Hamming távolsága: " + h.Hamming_tavolsag());
+        fb.start();
     }    
 }
