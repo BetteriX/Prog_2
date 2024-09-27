@@ -16,11 +16,12 @@ public class Hamming {
             return -1;
         }
         else {
+            int tavolsag = ks_1_hossz / 2; 
             if (ks_1_hossz % 2 == 0) {
-                return ks_1_hossz / 2;
+                return tavolsag;
             }
             else {
-                return (ks_1_hossz / 2) + 1;
+                return tavolsag + 1;
             }
         }
     }

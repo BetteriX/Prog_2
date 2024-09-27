@@ -8,5 +8,7 @@ public class Main {
         System.out.println(Movie.count);
 
         System.out.println(m2);
+
+        System.out.println(m1);
     }
 }
