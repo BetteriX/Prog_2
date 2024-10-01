@@ -3,8 +3,12 @@ public class Main {
         //Hamming h = new Hamming("toned", "rosess");
         //System.out.println("Hamming távolsága: " + h.Hamming_tavolsag());
 
-        FizzBuzz fb = new FizzBuzz(100);
+        //FizzBuzz fb = new FizzBuzz(100);
 
-        fb.start();
+        //fb.start();
+
+        int diff = Hamming.distance("toned", "roses");
+
+        System.out.println("Hamming-távolsága: " + diff);
     }    
 }
