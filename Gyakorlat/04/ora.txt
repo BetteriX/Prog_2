@@ -1,0 +1,5 @@
+kollekció egy olyan objektum ami más objektumok tárolására szolgál
+
+egy wrapper class (csomagoldo) tartalmaz prímitiv tipus
+
+mivel a java egy oop nyelv nagyon sok helyet osztályt kell megadni mert a primitiv típust sok helyen nem fogja el ezért egy primitiv típust elcsomagolunk egy osztályba
