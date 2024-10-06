@@ -18,8 +18,8 @@ public class Main {
         //kiir(szamok);
 
         List<Integer> copy = new ArrayList<>();
-
-        co}
+        
+    }
 
     public static void kiir(List<Integer> lista) {
         System.out.println(lista);

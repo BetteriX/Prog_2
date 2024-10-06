@@ -9,5 +9,20 @@ public class Boolean {
         System.out.println(b2);
         System.out.println(b3);
         System.out.println(b4);
+    }
+
+    public static boolean parseBoolean(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'parseBoolean'");
+    }
+
+    public static char[] logicalAnd(boolean a, boolean b) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'logicalAnd'");
+    }
+
+    public static char[] valueOf(boolean b) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'valueOf'");
     }    
 }
