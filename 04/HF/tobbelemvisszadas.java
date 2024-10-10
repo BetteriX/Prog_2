@@ -39,7 +39,7 @@ public class tobbelemvisszadas {
             }
         }
         
-        System.out.println("Max: " + min + " Min: " + max);
+        System.out.println("Max: " + max + " Min: " + min);
     }
     
     public static void min_max_tomb(int[] tomb) {
@@ -56,6 +56,6 @@ public class tobbelemvisszadas {
             }
         }
 
-        System.out.println("Max: " + min + " Min: " + max);
+        System.out.println("Max: " + max + " Min: " + min);
     }
 }
