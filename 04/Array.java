@@ -7,7 +7,6 @@ public class Array {
             if (array[i] < min) {
                 min = array[i];
             }
-
             if (array[i] > max) {
                 max = array[i];
             }
@@ -16,7 +15,7 @@ public class Array {
         int[] min_max = { min, max };
 
         return min_max;
-    } 
+    }
     public static void main(String[] args) {
         int[] tomb = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         int[] result = getMinMax(tomb);
