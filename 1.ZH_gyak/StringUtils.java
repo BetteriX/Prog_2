@@ -1,8 +1,6 @@
 public class StringUtils {
-    private String szoveg;
-
     private StringUtils() {
-
+        // Nincs példányosítva
     }
 
     public static String swapCase(String szoveg) {
