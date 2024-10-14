@@ -1,9 +1,9 @@
 1. Egyszerű osztály (class)
 2. Parancssori argumentum (args)
 3. Billenytüzet beolvasásos (Scanner)
-4. Olvasás fájlból
+4. Olvasás fájlból (PTI, Mozi)
 5. Statikus metodus
-6. Szting kezelés
+6. Sztring kezelés
 7. Tömb kezelés
 
 A split a sztringet reguláris kifejezés ként kezeli
