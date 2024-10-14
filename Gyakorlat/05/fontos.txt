@@ -1,16 +1,20 @@
-1. Egyszerű osztály (class)
-2. Parancssori argumentum (args)
-3. Billenytüzet beolvasásos (Scanner)
+1. Egyszerű osztály (class) 
+2. Parancssori argumentum (args) 
+3. Billenytüzet beolvasásos (Scanner) 
 4. Olvasás fájlból (PTI, Mozi)
 5. Statikus metodus
 6. Sztring kezelés
 7. Tömb kezelés
 
+StringBuilder!!!
+ASCII!
+Listák1-2!
+
 A split a sztringet reguláris kifejezés ként kezeli
 
 ha . kell splitelni: s.split("\\.") mert spec. karakter
 
-Reguális kifejezések esetén a \s+
+Reguális kifejezések esetén a \\s+
 és trim() a felesleges szokozok eltuntetéséhez 
 
 

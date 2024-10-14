@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.List;
 
 public class Mozi {
@@ -21,7 +20,5 @@ public class Mozi {
             }
         }
         System.out.println("Legalább félmillióan szavozott filmek száma: " + sum_felmillio);
-
-        List<Integer> szamok = new ArrayList<>().;
     }
 }

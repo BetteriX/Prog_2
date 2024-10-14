@@ -1,16 +1,28 @@
-public class Main {
-    class Verem {
-        public int data;
+import java.util.ArrayList;
+import java.util.List;
 
-        public void betesz(int value) {
-            this.data.add(value);
+public class Main {
+    public class Verem {
+        private List<Integer> szamok = new ArrayList<>();
+
+        public int size() {
+            return this.szamok.size();
         }
 
-        @Override
+        public boolean isEmpty() {
+            return this.szamok.isEmpty();
+        }
+
+        public void append(int szam) {
+            this.szamok.add(szam);
+        }
+
+        public int pop() {
+            return this.szamok.remove(this.szamok.size() - 1);
+        }
+
         public String toString() {
-            String result = this.data.toString();
-            result = result.replace("]", "");
-            return result;
+            return this.szamok.toString().replace("]", "");
         }
     }
 

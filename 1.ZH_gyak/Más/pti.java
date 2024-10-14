@@ -15,7 +15,7 @@ public class pti {
             String szak = adatok[2].toLowerCase();
 
             if (szak.equals("pti")) {
-                String nev_cap = nev.toUpperCase().charAt(0) + nev.substring(1, nev.length());
+                String nev_cap = nev.toUpperCase().charAt(0) + nev.substring(1);
                 pti_nevek.add(nev_cap);
             }
 
