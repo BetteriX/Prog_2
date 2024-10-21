@@ -20,7 +20,7 @@ public class wrapper {
         System.out.println(Integer.valueOf(n2));
 
         System.out.print("Két szám között kiválasza a legkisebbet: ");
-        System.out.println(Integer.min(n1,n2));
+        System.out.println(Integer.min(n1, n2));
 
         System.out.println();
 
@@ -37,13 +37,13 @@ public class wrapper {
         System.out.println();
 
         System.out.println("Boolean metódusok: ");
-        boolean a = false;
-        boolean b = true;
+        // boolean a = false;
+        // boolean b = true;
 
         System.out.print("Egy And operátort futatunk: ");
-        System.out.println(Boolean.logicalAnd(a, b));
-        
+        // System.out.println(Boolean.logicalAnd(a, b));
+
         System.out.print("Kiiratja a boolean értékét: ");
-        System.out.println(Boolean.valueOf(b));
+        // System.out.println(Boolean.valueOf(b));
     }
 }
