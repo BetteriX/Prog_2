@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="korso_bogre:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/korso_bogre_jar</output-path>
+    <root id="archive" name="korso_bogre.jar">
+      <element id="module-output" name="korso_bogre" />
+    </root>
+  </artifact>
+</component>
