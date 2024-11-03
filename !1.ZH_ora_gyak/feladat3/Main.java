@@ -24,6 +24,8 @@ public class Main {
         System.out.print(prompt);
 
         String text = scanner.nextLine();
+        scanner.close();
+
         return text;
     }
 
@@ -50,12 +52,18 @@ public class Main {
         String lastWord = text[0];
 
         for (int index = 1; index < text.length; index++) {
-            // TODO debugging
-            // System.out.println(lastWord.charAt(0));
-            if (!lastWord.toLowerCase().endsWith("" + text[index].toLowerCase().charAt(0))) {
+            // String[2] = {"Macska", "Kutya"} -> Nem láncolt
+            // lastWord = "Macska"
+
+            // text[index] -> "Kutya"
+            // text[index].toLowerCase().charAt(0) -> "k"
+            // if (!lastWord.toLowerCase().endsWith("" +
+            // text[index].toLowerCase().charAt(0)))
+            if (!lastWord.toLowerCase().endsWith(Character.toString(text[index].toLowerCase().charAt(0)))) {
                 return false;
             }
 
+            // lastWord+1 -> "Kutya"
             lastWord = text[index];
         }
 
