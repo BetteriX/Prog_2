@@ -8,12 +8,14 @@ public class Main {
             String input = input("Adjon meg szavakat (pl.: cat tail leopard dog): ");
             String[] text = input.split(" ");
 
-            if (!checkError(text)) {
-                System.err.println("");
+            if (checkError(text)) {
+                System.out.println("");
             } else {
-                System.out.println(isChained(text) ? "A szavak láncoltak." : " A szavak nem lácoltak.");
+                System.out.println(isChained(text) ? "A szavak láncoltak." : "A szavak nem lácoltak.");
 
-                flag = false;
+                if (isChained(text)) {
+                    flag = false;
+                }
             }
         } while (flag);
     }
@@ -24,15 +26,13 @@ public class Main {
         System.out.print(prompt);
 
         String text = scanner.nextLine();
-        scanner.close();
-
         return text;
     }
 
     static boolean checkError(String[] text) {
         if (text.length == 1 || text[0].equals("")) {
             System.out.println("Hiba! A bemenet nem lehet üres. Kérem, adjon meg egy érvényes szólistát!");
-            return false;
+            return true;
         }
 
         for (String s : text) {
@@ -40,12 +40,12 @@ public class Main {
                 if (!Character.isLetter(c)) {
                     System.out.println(
                             "Hiba! A bemenet csak betűket és szóközöket tartalmazhat. Kérem, adjon meg egy érvényes szólistát!");
-                    return false;
+                    return true;
                 }
             }
         }
 
-        return true;
+        return false;
     }
 
     static boolean isChained(String[] text) {
@@ -57,6 +57,7 @@ public class Main {
 
             // text[index] -> "Kutya"
             // text[index].toLowerCase().charAt(0) -> "k"
+
             // if (!lastWord.toLowerCase().endsWith("" +
             // text[index].toLowerCase().charAt(0)))
             if (!lastWord.toLowerCase().endsWith(Character.toString(text[index].toLowerCase().charAt(0)))) {
