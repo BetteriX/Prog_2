@@ -6,7 +6,7 @@ public class FizzBuzz {
     }
 
     public void start() {
-        for (int i = 1; i < szam; i++) {
+        for (int i = 1; i <= szam; i++) {
             String fizzbuzz = "";
             if (i % 3 == 0) {
                 fizzbuzz += "fizz";
@@ -16,7 +16,7 @@ public class FizzBuzz {
                 fizzbuzz += "buzz";
             }
 
-            if(fizzbuzz == "") {
+            if (fizzbuzz == "") {
                 fizzbuzz += i;
             }
 
