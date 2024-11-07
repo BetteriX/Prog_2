@@ -6,7 +6,7 @@ public class Main {
         }
 
         for (char c : args[0].toCharArray()) {
-            if (!Character.isDigit(c)) {
+            if (!Character.isDigit(c) && c != '-') {
                 System.out.println("Hiba! A háromszögszám számításához pozitív egész szám szükséges.");
                 System.exit(2);
             }

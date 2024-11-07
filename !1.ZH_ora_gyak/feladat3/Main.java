@@ -60,7 +60,15 @@ public class Main {
 
             // if (!lastWord.toLowerCase().endsWith("" +
             // text[index].toLowerCase().charAt(0)))
-            if (!lastWord.toLowerCase().endsWith(Character.toString(text[index].toLowerCase().charAt(0)))) {
+            // if
+            // (!lastWord.toLowerCase().endsWith(Character.toString(text[index].toLowerCase().charAt(0))))
+            // {
+            // return false;
+            // }
+            char utolso_betu = lastWord.toLowerCase().charAt(lastWord.length() - 1);
+            char elso_betu = text[index].toLowerCase().charAt(0);
+
+            if (utolso_betu != elso_betu) {
                 return false;
             }
 

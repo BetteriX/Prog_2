@@ -4,21 +4,35 @@ public class StringUtils {
     }
 
     public static String swapCase(String szoveg) {
-        int hossz = szoveg.length();
-        char[] char_szoveg = szoveg.toCharArray();
+        StringBuffer sb = new StringBuffer();
 
-        // Ezt iterációs for-al nem érdemes megcsinálni mert itt az i változó kell hogy
-        // tudjunk hivatkozni a következő betüre
-        for (int i = 0; i < hossz; i++) {
-            if (Character.isUpperCase(char_szoveg[i])) {
-                char_szoveg[i] = Character.toLowerCase(char_szoveg[i]);
-            } else if (Character.isLowerCase(char_szoveg[i])) {
-                char_szoveg[i] = Character.toUpperCase(char_szoveg[i]);
+        for (char c : szoveg.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                sb.append(Character.toLowerCase(c));
+            } else if (Character.isLowerCase(c)) {
+                sb.append(Character.toUpperCase(c));
+            } else {
+                sb.append(c);
             }
         }
 
+        return sb.toString();
+
+        // int hossz = szoveg.length();
+        // char[] char_szoveg = szoveg.toCharArray();
+
+        // Ezt iterációs for-al nem érdemes megcsinálni mert itt az i változó kell hogy
+        // tudjunk hivatkozni a következő betüre
+        // for (int i = 0; i < hossz; i++) {
+        // if (Character.isUpperCase(char_szoveg[i])) {
+        // char_szoveg[i] = Character.toLowerCase(char_szoveg[i]);
+        // } else if (Character.isLowerCase(char_szoveg[i])) {
+        // char_szoveg[i] = Character.toUpperCase(char_szoveg[i]);
+        // }
+        // }
+
         // Átkonvertájuk string-é
-        return new String(char_szoveg);
+        // return new String(char_szoveg);
     }
 
     public static boolean strongPassword(String password) {
