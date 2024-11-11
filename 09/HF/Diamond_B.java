@@ -7,6 +7,8 @@ public class Diamond_B {
 
         int szam = scanner.nextInt();
         assert szam % 2 != 0 : "A magasság nem lehet páros!";
+        scanner.close();
+
         int space = (szam / 2);
         int csillag = 1;
 

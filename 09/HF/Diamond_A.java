@@ -10,6 +10,7 @@ public class Diamond_A {
             System.out.println("A magasság nem lehet páros!");
             System.exit(1);
         }
+        scanner.close();
 
         int space = (szam / 2);
         int csillag = 1;
