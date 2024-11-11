@@ -6,7 +6,7 @@ public class Split_Join {
         String s = "demo:x:1001:100::/home/demo:/bin/bash";
         String[] parts = s.split("[:\\s]+"); // \\s+ a felesleges whitespaceket eltunteti, hogyha [] rakjuk akkor többet
                                              // lehet splitelni a + jelet a [] kivül kell
-
+        // a a -> trim() -y
         List<String> li = Arrays.asList(parts);
 
         System.out.println(li);
