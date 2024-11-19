@@ -20,6 +20,20 @@ public class RandUtils {
     }
 
     public static int choice(List<Integer> l) {
-        return randint(0, l.size());
+        int min = l.get(0);
+        int max = l.get(0);
+
+        for (int i : l) {
+            if (i < min) {
+                min = i;
+            }
+
+            if (i > max) {
+                max = i;
+            }
+        }
+
+        // System.out.println(min + " " + max);
+        return randint(min, max);
     }
 }
