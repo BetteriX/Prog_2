@@ -15,6 +15,7 @@ public class Main {
         // System.out.println(x3);
         // hs.add(x3);
         // }
+
         System.out.println("HF #2: " + x1 + " " + x2);
         System.out.println("HF #3: " + x3);
     }
