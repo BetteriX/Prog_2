@@ -20,6 +20,6 @@ public class RandUtils {
     }
 
     public static int choice(List<Integer> l) {
-        return randint(0, l.size() + 1);
+        return randint(0, l.size());
     }
 }
