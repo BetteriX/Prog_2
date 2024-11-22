@@ -1,0 +1,3 @@
+Piroska es a farkas:Piroska,farkas,nagymama,vadasz
+Hofeherke es a het torpe:Hofeherke,herceg,vadasz,gonosz mostoha,Szende,Szundi,Tudor,Vidor,Hapci,Morgo,Kuka
+A kismalac es a farkasok:kismalac,farkas
