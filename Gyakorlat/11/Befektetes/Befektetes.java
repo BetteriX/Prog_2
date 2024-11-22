@@ -41,4 +41,17 @@ public class Befektetes implements Comparable<Befektetes> {
             return this.getLejaratiToke() == b.getLejaratiToke();
         }
     }
+
+    @Override
+    public String toString() {
+        return String.format(
+                """
+                        Töke: %.2f
+                        futamido: %d
+                        Kamat: %.2f
+                        """,
+                this.toke,
+                this.futamido,
+                this.kamat);
+    }
 }

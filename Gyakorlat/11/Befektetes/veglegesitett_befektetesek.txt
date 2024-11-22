@@ -1,0 +1,12 @@
+Töke: 100.25
+futamido: 2
+Kamat: 2.50
+
+Töke: 100.25
+futamido: 2
+Kamat: 2.50
+
+Töke: 150.25
+futamido: 3
+Kamat: 1.50
+
