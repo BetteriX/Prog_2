@@ -25,7 +25,7 @@ public class Teszt_Befektetesek {
                 try {
                     if (parts.length != 3) {
                         // Hogyha nincsen meg az öszess adat akkor eldobja és nem rakja belle. (c.)
-                        throw new HianyosAdatok("A" + sor_count + ". sor hiányos");
+                        throw new HianyosAdatok("A " + sor_count + ". sor hiányos");
                     }
 
                     double toke = Double.parseDouble(parts[0]);

@@ -39,6 +39,8 @@ public class Befektetes implements Comparable<Befektetes> {
             return false;
         } else {
             // Fontos! Típuskényszerítés
+            // Mert hogyha a befeketetes nem befektetes objektum akkor hibaüzenetel tér
+            // vissza, így nem fog
             Befektetes b = (Befektetes) obj;
 
             return this.getLejaratiToke() == b.getLejaratiToke();
@@ -46,7 +48,6 @@ public class Befektetes implements Comparable<Befektetes> {
     }
 
     // Fontos! Ez nővekvő sorrendben rakja a Collection.sort()-om
-
     @Override
     public int compareTo(Befektetes o) {
         return Double.compare(this.getLejaratiToke(), o.getLejaratiToke());
