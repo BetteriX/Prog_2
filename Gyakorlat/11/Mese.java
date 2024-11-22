@@ -32,8 +32,8 @@ public class Mese implements Comparable<Mese> {
         if (this.szereplok_szama() == o.szereplok_szama()) {
             return this.cim.compareTo(o.get_cim());
         } else {
-            // -1 -el való szorzás akkor csökkenő sorrend
-            // Ha nincs akkor növekvő
+            // -1 -el való szorzás akkor csökkenő sorrend!
+            // Ha nincs akkor növekvő!
             return (-1) * Integer.compare(this.szereplok_szama(), o.szereplok_szama());
         }
     }

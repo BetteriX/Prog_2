@@ -7,12 +7,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Scanner;
 import java.util.Set;
 
 public class Teszt_Befektetesek {
     public static void main(String[] args) {
-        Set<Befektetes> halmaz = new HashSet<>(); // Duplikációkat nem tartalmaz (d.)
-        // List<Befektetes> halmaz = new ArrayList<>();
+        // A halmaz akkor kell ha duplikációkat nem akarunk látni
+        // Ezt a hashCode() al és a HianyosAdatok() al oldjuk meg
+        Set<Befektetes> halmaz = new HashSet<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(new File("befektetesek.txt")))) {
             String sor;
@@ -20,22 +22,22 @@ public class Teszt_Befektetesek {
             while ((sor = br.readLine()) != null) {
                 String[] parts = sor.split(",");
                 sor_count++;
-                if (parts.length != 3) {
-                    // Hogyha nincsen meg az öszess adat akkor eldobja és nem rakja belle. (d.)
-                    throw new HianyosAdatok("A" + sor_count + ". sor hiányos");
+                try {
+                    if (parts.length != 3) {
+                        // Hogyha nincsen meg az öszess adat akkor eldobja és nem rakja belle. (c.)
+                        throw new HianyosAdatok("A" + sor_count + ". sor hiányos");
+                    }
+
+                    double toke = Double.parseDouble(parts[0]);
+                    int futamido = Integer.parseInt(parts[1]);
+                    double kamat = Double.parseDouble(parts[2]);
+
+                    // Fontos!
+                    halmaz.add(new Befektetes(toke, futamido, kamat));
+                } catch (HianyosAdatok e) {
+                    System.out.println(e.getMessage());
                 }
-
-                double toke = Double.parseDouble(parts[0]);
-                int futamido = Integer.parseInt(parts[1]);
-                double kamat = Double.parseDouble(parts[2]);
-
-                // Fontos!
-                halmaz.add(new Befektetes(toke, futamido, kamat));
             }
-
-        } catch (HianyosAdatok e) {
-            System.out.println(e.getMessage());
-
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
@@ -56,5 +58,22 @@ public class Teszt_Befektetesek {
             System.out.println(e.getMessage());
         }
 
+        // e.
+        listaz(sorted_l);
+    }
+
+    // e.
+    public static void listaz(List<Befektetes> l) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Lejárati összegének a határa: ");
+        int hatar = scanner.nextInt();
+        scanner.close();
+
+        for (Befektetes e : l) {
+            if (e.getLejaratiToke() > hatar) {
+                System.out.println(e);
+            }
+        }
     }
 }

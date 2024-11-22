@@ -13,7 +13,7 @@ public class Main {
 
             for (char c : s.toCharArray()) {
                 if (Character.isDigit(c)) {
-                    int number = Character.getNumericValue(c);
+                    int number = Character.getNumericValue(c); // int number = c - '0';
                     // System.out.println(number);
                     if (firstDigit == -1)
                         firstDigit = number;

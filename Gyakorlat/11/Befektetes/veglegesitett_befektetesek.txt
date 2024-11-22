@@ -1,12 +1,2 @@
-Töke: 100.25
-futamido: 2
-Kamat: 2.50
-
-Töke: 100.25
-futamido: 2
-Kamat: 2.50
-
-Töke: 150.25
-futamido: 3
-Kamat: 1.50
-
+Befektetes{toke=100.25, futamido=2, kamat=2.5}
+Befektetes{toke=150.25, futamido=3, kamat=1.5}

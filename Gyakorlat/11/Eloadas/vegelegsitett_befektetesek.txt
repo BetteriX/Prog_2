@@ -1,0 +1,3 @@
+Befektetes{toke=1000.0, futamido=5, kamat=3.5}
+Befektetes{toke=2000.0, futamido=3, kamat=4.0}
+Befektetes{toke=3000.0, futamido=2, kamat=1.9}

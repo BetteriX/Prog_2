@@ -59,8 +59,7 @@ public class Hotel {
     }
 
     public List<String> getGuests() {
-        // Listából nem készitünk másolatot! (this)
-        return guests;
+        return this.guests;
     }
 
     @Override
@@ -71,7 +70,7 @@ public class Hotel {
                 - Szobák száma: %d
                 - Szabad szábák száma: %d
                 - Lefoglalt szobák száma: %d
-                - Vendéglista %s""",
+                - Vendéglista: %s""",
                 this.hotelName,
                 this.rooms,
                 this.avaliableRooms,
