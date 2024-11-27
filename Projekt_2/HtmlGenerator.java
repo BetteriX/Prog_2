@@ -30,34 +30,24 @@ public class HtmlGenerator {
             // writer.write("<p><a href=\"\\index.html\">Start</a></p>");
 
             // If subdirectories exist, list them
-            // Display links to subdirectories
             if (!subdirectories.isEmpty()) {
                 writer.write("<h2>Directories:</h2><ul>");
                 for (File subdir : subdirectories) {
-                    File[] subdirImages = subdir.listFiles((dir, name) -> name.toLowerCase().endsWith(".jpg") ||
-                            name.toLowerCase().endsWith(".png") ||
-                            name.toLowerCase().endsWith(".gif"));
-                    File[] subSubDirs = subdir.listFiles(File::isDirectory);
-
-                    // Allow subdirectory if it contains images OR further subdirectories
-                    if ((subdirImages != null && subdirImages.length > 0) ||
-                            (subSubDirs != null && subSubDirs.length > 0)) {
-                        String subdirName = subdir.getName();
-                        writer.write("<li><a href=\"" + subdirName + "/index.html\">" + subdirName + "</a></li>");
-                    }
+                    String subdirName = subdir.getName();
+                    writer.write("<li><a href=\"" + subdirName + "/index.html\">" + subdirName + "</a></li>");
                 }
                 writer.write("</ul>");
             }
 
             // If there are image files, list them with links
-            if (!imageFiles.isEmpty()) {
-                writer.write("<h2>Images:</h2><ul>");
-                for (ImageFile imageFile : imageFiles) {
-                    writer.write(
-                            "<li><a href=\"" + imageFile.getHtmlFileName() + "\">" + imageFile.getName() + "</a></li>");
-                }
-                writer.write("</ul>");
+            // if (!imageFiles.isEmpty()) {
+            writer.write("<h2>Images:</h2><ul>");
+            for (ImageFile imageFile : imageFiles) {
+                writer.write(
+                        "<li><a href=\"" + imageFile.getHtmlFileName() + "\">" + imageFile.getName() + "</a></li>");
             }
+            writer.write("</ul>");
+            // }
 
             // Close the HTML tags
             writer.write("</body></html>");

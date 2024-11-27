@@ -26,34 +26,32 @@ public class ImageGalleryApp {
         if (!folder.isDirectory())
             return;
 
+        // Filter image files
         File[] imageFilesArray = folder.listFiles((dir, name) -> name.toLowerCase().endsWith(".jpg") ||
                 name.toLowerCase().endsWith(".png") ||
                 name.toLowerCase().endsWith(".gif"));
         File[] subdirectories = folder.listFiles(File::isDirectory);
 
         List<ImageFile> imageFiles = new ArrayList<>();
-        for (File imageFile : imageFilesArray) {
-            imageFiles.add(new ImageFile(imageFile.getName(), imageFile.getAbsolutePath()));
-        }
-
-        // Skip generating HTML if no images and no subdirectories exist
-        if (imageFiles.isEmpty() && (subdirectories == null || subdirectories.length == 0)) {
-            return;
+        if (imageFilesArray != null) {
+            for (File imageFile : imageFilesArray) {
+                imageFiles.add(new ImageFile(imageFile.getName(), imageFile.getAbsolutePath()));
+            }
         }
 
         HtmlGenerator htmlGenerator = new HtmlGenerator(folder, rootPath);
 
         try {
+            // Always generate index.html, even for empty folders
+            List<File> subdirList = subdirectories != null ? Arrays.asList(subdirectories) : new ArrayList<>();
+            htmlGenerator.generateIndexPage(imageFiles, subdirList);
+
             // Generate individual image pages
             for (ImageFile imageFile : imageFiles) {
                 htmlGenerator.generateImagePage(imageFile);
             }
 
-            // Generate the index.html page for this directory, including subdirectories
-            List<File> subdirList = Arrays.asList(subdirectories);
-            htmlGenerator.generateIndexPage(imageFiles, subdirList);
-
-            // Recursively generate index pages for subdirectories
+            // Recursively scan subdirectories
             if (subdirectories != null) {
                 for (File subdir : subdirectories) {
                     scanDirectory(subdir);
