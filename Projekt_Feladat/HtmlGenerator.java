@@ -1,75 +1,150 @@
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
 public class HtmlGenerator {
+    private File folder;
+    private String rootPath;
 
-    // Generate HTML for an individual image
-    public void generateImageHtml(File image, File directory) {
-        String htmlContent = "<html><head><title>" + image.getName() + "</title></head><body>";
-        htmlContent += "<h1>" + image.getName() + "</h1>";
-        htmlContent += "<img src=\"" + image.getName() + "\" alt=\"" + image.getName()
-                + "\" style=\"max-width: 100%; height: auto;\" />";
-        htmlContent += "<br><br><a href=\"index.html\">Back to Index</a>";
-        htmlContent += "</body></html>";
+    public HtmlGenerator(File folder, String rootPath) {
+        this.folder = folder;
+        this.rootPath = rootPath;
+    }
 
-        try {
-            File htmlFile = new File(directory, image.getName().replaceFirst("[.][^.]+$", "") + ".html");
-            try (FileWriter writer = new FileWriter(htmlFile)) {
-                writer.write(htmlContent);
+    // Generálja az index.html, minden külön mappába
+    public void generateIndexPage(List<ImageFile> imageFiles, List<File> subdirectories) throws IOException {
+        // Előre létrehozza a fájl-t
+        File indexFile = new File(folder, "index.html");
+
+        // Szerkesztük a fájl-t
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(indexFile))) {
+            writer.write("<!DOCTYPE html>\n");
+            writer.write("<html>\n");
+            writer.write("\t<head>\n");
+            writer.write("\t\t<title>Index</title>\n");
+            writer.write("\t</head>\n");
+            writer.write("\t<body>\n");
+
+            // A relatív távolságával visszalehet menni a fő mappába
+            String relativePath = getRelativePathToRoot(folder, new File(rootPath));
+            writer.write("\t<h2><a href=\"" + relativePath + "index.html\">Start Page</a></h2>\n");
+
+            // Huzz egy csíkót
+            writer.write("\t<div style=\"height: 2px; background-color: black;\"></div>\n");
+
+            // Felsorolja az alkönyvtárakat
+            writer.write("\t<h2>Directories:</h2>\n");
+            writer.write("\t<ul>\n");
+            for (File subdir : subdirectories) {
+                String subdirName = subdir.getName();
+                writer.write("\t\t<li><a href=\"" + subdirName + "/index.html\">" + subdirName + "</a></li>\n");
             }
-        } catch (IOException e) {
-            System.out.println("Error generating HTML for image: " + image.getName());
+            writer.write("\t</ul>\n");
+
+            // Huzz egy csíkót
+            writer.write("\t<div style=\"height: 2px; background-color: black;\"></div>\n");
+
+            // A képeket kilistáza
+            writer.write("\t<h2>Images:</h2>\n");
+            writer.write("\t<ul>\n");
+            for (ImageFile imageFile : imageFiles) {
+                writer.write("\t\t<li><a href=\"" + imageFile.getHtmlFileName() + "\">" + imageFile.getName()
+                        + "</a></li>\n");
+            }
+            writer.write("\t</ul>\n");
+
+            writer.write("\t</body>\n");
+            writer.write("</html>");
+        }
+
+    }
+
+    // Képeket generálja -> {Kép neve}.html formátumban
+    public void generateImagePage(ImageFile imageFile) throws IOException {
+        // Az ImageFile osztályt meghívjuk majd hozzáadjuk a paramétereket.
+        File imageHtmlFile = new File(folder, imageFile.getHtmlFileName());
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(imageHtmlFile))) {
+            writer.write("<!DOCTYPE html>\n");
+            writer.write("<html>\n");
+            writer.write("\t<head>\n");
+            writer.write("\t\t<title>" + imageFile.getName() + "</title>\n");
+            writer.write("\t</head>\n");
+            writer.write("\t<body>\n");
+
+            // A relatív távolságával visszalehet menni a fő mappába
+            String relativePath = getRelativePathToRoot(folder, new File(rootPath));
+            writer.write("\t<h2><a href=\"" + relativePath + "index.html\">Start Page</a></h2>\n");
+
+            writer.write("\t<div style=\"height: 2px; background-color: black;\"></div>\n");
+
+            // Visszamegy az aktuális index.html-be
+            writer.write("\t<p><a href=\"index.html\">^^</a></p>\n");
+
+            // Koordinációk deklarációja
+            ImageFile prevImage = imageFile.getPrevious();
+            ImageFile nextImage = imageFile.getNext();
+
+            // Egyvonalba lesznek így (<< {File.jpg} >>)
+            writer.write("\t<div style=\"display: inline;\">\n");
+
+            // Navigation: Ha visszamegy
+            if (prevImage != null) {
+                writer.write("\t\t<a href=\"" + prevImage.getHtmlFileName() + "\">&lt;&lt;</a>\n");
+            } else {
+                // Ha pedig nincs semmi akkor semmit sem csinál
+                writer.write("\t\t<a href=\"" + imageFile.getHtmlFileName() + "\">&lt;&lt;</a>\n");
+            }
+
+            writer.write("\t\t<h2 style=\"display: inline;\">" + imageFile.getName() + "</h2>\n");
+
+            // Navigation: Köv. kép
+            if (nextImage != null) {
+                writer.write("\t\t<a href=\"" + nextImage.getHtmlFileName() + "\">>></a>\n");
+            } else {
+                // Ha pedig nincs semmi akkor semmit sem csinál
+                writer.write("\t\t<a href=\"" + imageFile.getHtmlFileName() + "\">>></a>\n\n");
+            }
+
+            writer.write("\t</div>\n");
+
+            // Sörtéres a kép előtt
+            writer.write("\t<br><br>\n");
+
+            // Kép kííratása
+            // Egy Javascript functional meghíva, ami rákkatintáskor fog münködni
+            // (goToNextImage())
+            writer.write("\t<img src=\"" + imageFile.getName() + "\" alt=\"" + imageFile.getName()
+                    + "\" onclick=\"goToNextImage()\"/>\n");
+
+            // JavaScript
+            writer.write("\t<script>\n");
+            writer.write("\t\tfunction goToNextImage() {\n");
+            if (nextImage != null) {
+                writer.write("\t\twindow.location.href = '" + nextImage.getHtmlFileName() + "';\n");
+            }
+            writer.write("\t}\n");
+            writer.write("\t</script>\n");
+
+            writer.write("\t</body>\n");
+            writer.write("</html>");
         }
     }
 
-    // Generate index.html that shows directories on the left (without links) and
-    // images on the right
-    public void generateIndexHtml(String rootPath, File directory, List<File> images, List<File> subDirectories) {
-        StringBuilder htmlContent = new StringBuilder(
-                "<html><head><title>Index of " + directory.getName() + "</title></head><body>");
+    // Azt ellenőrzi hogy milyen távol van a fő mappától és a relatív távolságát
+    // adja vissza
+    private String getRelativePathToRoot(File currentFolder, File rootFolder) {
+        StringBuilder relativePath = new StringBuilder();
+        File parentFolder = currentFolder;
 
-        // Styling the layout with CSS for the left (directories) and right (images)
-        // columns
-        htmlContent.append("<style>")
-                .append("body {font-family: Arial, sans-serif; display: flex;} ")
-                .append(".left {width: 20%; padding: 10px; border-right: 2px solid #000;} ")
-                .append(".right {width: 80%; padding: 10px;} ")
-                .append(".directory-list, .image-list {list-style-type: none; padding: 0;} ")
-                .append(".directory-list li, .image-list li {margin: 5px 0;} ")
-                .append(".directory-list span, .image-list a {text-decoration: none; color: #000;} ")
-                .append(".directory-list span:hover, .image-list a:hover {color: #007BFF;} ")
-                .append("</style>");
-        htmlContent.append("<body><div class=\"left\">");
-
-        // List directories on the left (without links, just names)
-        htmlContent.append("<h2>Directories:</h2>");
-        htmlContent.append("<ul class=\"directory-list\">");
-        for (File subDir : subDirectories) {
-            String subDirName = subDir.getName();
-            // Just show the directory names, no links
-            htmlContent.append("<li><span>" + subDirName + "</span></li>");
+        // Addig megy míg el nem éri a fő mappát
+        while (parentFolder != null && !parentFolder.getAbsolutePath().equals(rootFolder.getAbsolutePath())) {
+            relativePath.insert(0, "../");
+            parentFolder = parentFolder.getParentFile();
         }
-        htmlContent.append("</ul></div>");
 
-        // List images on the right with links
-        htmlContent.append("<div class=\"right\"><h2>Images:</h2><ul class=\"image-list\">");
-        for (File image : images) {
-            String imageName = image.getName();
-            htmlContent.append("<li><a href=\"" + image.getName().replaceFirst("[.][^.]+$", "") + ".html\">" + imageName
-                    + "</a></li>");
-        }
-        htmlContent.append("</ul></div></body></html>");
-
-        try {
-            // Write the index.html to the directory
-            File indexFile = new File(directory, "index.html");
-            try (FileWriter writer = new FileWriter(indexFile)) {
-                writer.write(htmlContent.toString());
-            }
-        } catch (IOException e) {
-            System.out.println("Error generating index.html for directory: " + directory.getName());
-        }
+        return relativePath.toString();
     }
 }
