@@ -43,4 +43,5 @@ public class ImageFile {
     public ImageFile getNext() {
         return next;
     }
+
 }
