@@ -34,8 +34,14 @@ public class HtmlGenerator {
             // Huzz egy csíkót
             writer.write("\t<div style=\"height: 2px; background-color: black;\"></div>\n");
 
-            // Felsorolja az alkönyvtárakat
             writer.write("\t<h2>Directories:</h2>\n");
+
+            // Akkor írja ki hogyha nem a gyökér mappában van
+            if (!relativePath.equals("")) {
+                writer.write("<p><a href=../index.html><<</a></p>");
+            }
+
+            // Felsorolja az alkönyvtárakat
             writer.write("\t<ul>\n");
             for (File subdir : subdirectories) {
                 String subdirName = subdir.getName();

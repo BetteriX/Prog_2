@@ -35,7 +35,7 @@ public class ImageGalleryApp {
         List<ImageFile> imageFiles = new ArrayList<>();
         if (imageFilesArray != null) {
             for (File imageFile : imageFilesArray) {
-                imageFiles.add(new ImageFile(imageFile.getName(), imageFile.getAbsolutePath()));
+                imageFiles.add(new ImageFile(imageFile.getName()));
             }
         }
 

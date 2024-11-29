@@ -1,23 +1,19 @@
 public class ImageFile {
     private String name;
-    private String path;
+    // private String path;
 
-    // Koordinációk
-    private ImageFile previous;
-    private ImageFile next;
-
-    public ImageFile(String name, String path) {
+    public ImageFile(String name) {
         this.name = name;
-        this.path = path;
+        // this.path = path;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getPath() {
-        return path;
-    }
+    // public String getPath() {
+    // return path;
+    // }
 
     public String getFileNameWithoutExtension() {
         return name.substring(0, name.lastIndexOf('.'));
@@ -26,6 +22,9 @@ public class ImageFile {
     public String getHtmlFileName() {
         return getFileNameWithoutExtension() + ".html";
     }
+
+    private ImageFile previous;
+    private ImageFile next;
 
     // Koordináció miatt kellenek
     public void setPrevious(ImageFile previous) {

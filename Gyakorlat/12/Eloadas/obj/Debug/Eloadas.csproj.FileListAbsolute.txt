@@ -1,6 +1,0 @@
-/home/betterix/Code/School/Prog_2/Gyakorlat/12/Eloadas/bin/Debug/Eloadas.exe
-/home/betterix/Code/School/Prog_2/Gyakorlat/12/Eloadas/bin/Debug/Eloadas.pdb
-/home/betterix/Code/School/Prog_2/Gyakorlat/12/Eloadas/obj/Debug/Eloadas.csproj.AssemblyReference.cache
-/home/betterix/Code/School/Prog_2/Gyakorlat/12/Eloadas/obj/Debug/Eloadas.csproj.CoreCompileInputs.cache
-/home/betterix/Code/School/Prog_2/Gyakorlat/12/Eloadas/obj/Debug/Eloadas.exe
-/home/betterix/Code/School/Prog_2/Gyakorlat/12/Eloadas/obj/Debug/Eloadas.pdb
