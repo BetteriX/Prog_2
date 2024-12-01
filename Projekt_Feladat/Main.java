@@ -6,8 +6,7 @@ public class Main {
         }
 
         String rootPath = args[0];
-        System.out.println(rootPath);
-        ImageGalleryApp app = new ImageGalleryApp(rootPath);
-        app.generateGallery();
+        Display disp = new Display(rootPath, true);
+        disp.Display_Main();
     }
 }

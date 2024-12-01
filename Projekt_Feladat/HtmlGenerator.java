@@ -14,7 +14,7 @@ public class HtmlGenerator {
     }
 
     // Generálja az index.html, minden külön mappába
-    public void generateIndexPage(List<ImageFile> imageFiles, List<File> subdirectories) throws IOException {
+    public void generateIndexPage(List<Images> images, List<File> subdirectories) throws IOException {
         // Előre létrehozza a fájl-t
         File indexFile = new File(folder, "index.html");
 
@@ -38,7 +38,7 @@ public class HtmlGenerator {
 
             // Akkor írja ki hogyha nem a gyökér mappában van
             if (!relativePath.equals("")) {
-                writer.write("<p><a href=../index.html><<</a></p>");
+                writer.write("<p><a href=../index.html>&lt;&lt;</a></p>");
             }
 
             // Felsorolja az alkönyvtárakat
@@ -49,14 +49,13 @@ public class HtmlGenerator {
             }
             writer.write("\t</ul>\n");
 
-            // Huzz egy csíkót
             writer.write("\t<div style=\"height: 2px; background-color: black;\"></div>\n");
 
             // A képeket kilistáza
             writer.write("\t<h2>Images:</h2>\n");
             writer.write("\t<ul>\n");
-            for (ImageFile imageFile : imageFiles) {
-                writer.write("\t\t<li><a href=\"" + imageFile.getHtmlFileName() + "\">" + imageFile.getName()
+            for (Images image : images) {
+                writer.write("\t\t<li><a href=\"" + image.getHtmlFileName() + "\">" + image.getName()
                         + "</a></li>\n");
             }
             writer.write("\t</ul>\n");
@@ -64,19 +63,17 @@ public class HtmlGenerator {
             writer.write("\t</body>\n");
             writer.write("</html>");
         }
-
     }
 
     // Képeket generálja -> {Kép neve}.html formátumban
-    public void generateImagePage(ImageFile imageFile) throws IOException {
-        // Az ImageFile osztályt meghívjuk majd hozzáadjuk a paramétereket.
-        File imageHtmlFile = new File(folder, imageFile.getHtmlFileName());
+    public void generateImagePage(Images image) throws IOException {
+        File imageHtmlFile = new File(folder, image.getHtmlFileName());
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(imageHtmlFile))) {
             writer.write("<!DOCTYPE html>\n");
             writer.write("<html>\n");
             writer.write("\t<head>\n");
-            writer.write("\t\t<title>" + imageFile.getName() + "</title>\n");
+            writer.write("\t\t<title>" + image.getName() + "</title>\n");
             writer.write("\t</head>\n");
             writer.write("\t<body>\n");
 
@@ -90,28 +87,29 @@ public class HtmlGenerator {
             writer.write("\t<p><a href=\"index.html\">^^</a></p>\n");
 
             // Koordinációk deklarációja
-            ImageFile prevImage = imageFile.getPrevious();
-            ImageFile nextImage = imageFile.getNext();
+            Images prevImage = image.getPrevious();
+            Images nextImage = image.getNext();
 
             // Egyvonalba lesznek így (<< {File.jpg} >>)
             writer.write("\t<div style=\"display: inline;\">\n");
 
             // Navigation: Ha visszamegy
+            // &lt; == <
             if (prevImage != null) {
                 writer.write("\t\t<a href=\"" + prevImage.getHtmlFileName() + "\">&lt;&lt;</a>\n");
             } else {
+                writer.write("\t\t<a href=\"" + image.getHtmlFileName() + "\">&lt;&lt;</a>\n");
                 // Ha pedig nincs semmi akkor semmit sem csinál
-                writer.write("\t\t<a href=\"" + imageFile.getHtmlFileName() + "\">&lt;&lt;</a>\n");
             }
 
-            writer.write("\t\t<h2 style=\"display: inline;\">" + imageFile.getName() + "</h2>\n");
+            writer.write("\t\t<h2 style=\"display: inline;\">" + image.getName() + "</h2>\n");
 
             // Navigation: Köv. kép
             if (nextImage != null) {
                 writer.write("\t\t<a href=\"" + nextImage.getHtmlFileName() + "\">>></a>\n");
             } else {
+                writer.write("\t\t<a href=\"" + image.getHtmlFileName() + "\">>></a>\n\n");
                 // Ha pedig nincs semmi akkor semmit sem csinál
-                writer.write("\t\t<a href=\"" + imageFile.getHtmlFileName() + "\">>></a>\n\n");
             }
 
             writer.write("\t</div>\n");
@@ -122,7 +120,7 @@ public class HtmlGenerator {
             // Kép kííratása
             // Egy Javascript functional meghíva, ami rákkatintáskor fog münködni
             // (goToNextImage())
-            writer.write("\t<img src=\"" + imageFile.getName() + "\" alt=\"" + imageFile.getName()
+            writer.write("\t<img src=\"" + image.getName() + "\" alt=\"" + image.getName()
                     + "\" onclick=\"goToNextImage()\"/>\n");
 
             // JavaScript
@@ -139,16 +137,16 @@ public class HtmlGenerator {
         }
     }
 
-    // Azt ellenőrzi hogy milyen távol van a fő mappától és a relatív távolságát
+    // Azt ellenőrzi hogy milyen távol van a fő mappától így a relatív távolságát
     // adja vissza
     private String getRelativePathToRoot(File currentFolder, File rootFolder) {
         StringBuilder relativePath = new StringBuilder();
         File parentFolder = currentFolder;
 
         // Addig megy míg el nem éri a fő mappát
-        while (parentFolder != null && !parentFolder.getAbsolutePath().equals(rootFolder.getAbsolutePath())) {
-            relativePath.insert(0, "../");
-            parentFolder = parentFolder.getParentFile();
+        while (!parentFolder.equals(rootFolder)) {
+            relativePath.append("../");
+            parentFolder = parentFolder.getParentFile(); // Visszalépteti 1-el
         }
 
         return relativePath.toString();
