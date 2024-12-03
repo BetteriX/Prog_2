@@ -1,0 +1,6 @@
+/home/betterix/Code/School/Prog_2/12/Mezogazdasagi/bin/Debug/Mezogazdasagi.exe
+/home/betterix/Code/School/Prog_2/12/Mezogazdasagi/bin/Debug/Mezogazdasagi.pdb
+/home/betterix/Code/School/Prog_2/12/Mezogazdasagi/obj/Debug/Mezogazdasagi.csproj.AssemblyReference.cache
+/home/betterix/Code/School/Prog_2/12/Mezogazdasagi/obj/Debug/Mezogazdasagi.csproj.CoreCompileInputs.cache
+/home/betterix/Code/School/Prog_2/12/Mezogazdasagi/obj/Debug/Mezogazdasagi.exe
+/home/betterix/Code/School/Prog_2/12/Mezogazdasagi/obj/Debug/Mezogazdasagi.pdb
