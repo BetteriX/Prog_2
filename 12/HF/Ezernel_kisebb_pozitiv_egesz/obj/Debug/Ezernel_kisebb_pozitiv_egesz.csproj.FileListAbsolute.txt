@@ -1,0 +1,6 @@
+/home/betterix/Code/School/Prog_2/12/HF/Ezernel_kisebb_pozitiv_egesz/bin/Debug/Ezernel_kisebb_pozitiv_egesz.exe
+/home/betterix/Code/School/Prog_2/12/HF/Ezernel_kisebb_pozitiv_egesz/bin/Debug/Ezernel_kisebb_pozitiv_egesz.pdb
+/home/betterix/Code/School/Prog_2/12/HF/Ezernel_kisebb_pozitiv_egesz/obj/Debug/Ezernel_kisebb_pozitiv_egesz.csproj.AssemblyReference.cache
+/home/betterix/Code/School/Prog_2/12/HF/Ezernel_kisebb_pozitiv_egesz/obj/Debug/Ezernel_kisebb_pozitiv_egesz.csproj.CoreCompileInputs.cache
+/home/betterix/Code/School/Prog_2/12/HF/Ezernel_kisebb_pozitiv_egesz/obj/Debug/Ezernel_kisebb_pozitiv_egesz.exe
+/home/betterix/Code/School/Prog_2/12/HF/Ezernel_kisebb_pozitiv_egesz/obj/Debug/Ezernel_kisebb_pozitiv_egesz.pdb

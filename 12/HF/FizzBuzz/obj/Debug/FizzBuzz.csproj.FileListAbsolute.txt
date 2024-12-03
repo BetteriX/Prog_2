@@ -1,0 +1,6 @@
+/home/betterix/Code/School/Prog_2/12/HF/FizzBuzz/bin/Debug/FizzBuzz.exe
+/home/betterix/Code/School/Prog_2/12/HF/FizzBuzz/bin/Debug/FizzBuzz.pdb
+/home/betterix/Code/School/Prog_2/12/HF/FizzBuzz/obj/Debug/FizzBuzz.csproj.AssemblyReference.cache
+/home/betterix/Code/School/Prog_2/12/HF/FizzBuzz/obj/Debug/FizzBuzz.csproj.CoreCompileInputs.cache
+/home/betterix/Code/School/Prog_2/12/HF/FizzBuzz/obj/Debug/FizzBuzz.exe
+/home/betterix/Code/School/Prog_2/12/HF/FizzBuzz/obj/Debug/FizzBuzz.pdb

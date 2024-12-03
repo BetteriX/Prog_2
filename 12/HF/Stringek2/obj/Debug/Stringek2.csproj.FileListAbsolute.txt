@@ -1,0 +1,6 @@
+/home/betterix/Code/School/Prog_2/12/HF/Stringek2/bin/Debug/Stringek2.exe
+/home/betterix/Code/School/Prog_2/12/HF/Stringek2/bin/Debug/Stringek2.pdb
+/home/betterix/Code/School/Prog_2/12/HF/Stringek2/obj/Debug/Stringek2.csproj.AssemblyReference.cache
+/home/betterix/Code/School/Prog_2/12/HF/Stringek2/obj/Debug/Stringek2.csproj.CoreCompileInputs.cache
+/home/betterix/Code/School/Prog_2/12/HF/Stringek2/obj/Debug/Stringek2.exe
+/home/betterix/Code/School/Prog_2/12/HF/Stringek2/obj/Debug/Stringek2.pdb
