@@ -1,0 +1,6 @@
+/home/betterix/Code/School/Prog_2/13/HF/ListComp/ListComp/bin/Debug/ListComp.exe
+/home/betterix/Code/School/Prog_2/13/HF/ListComp/ListComp/bin/Debug/ListComp.pdb
+/home/betterix/Code/School/Prog_2/13/HF/ListComp/ListComp/obj/Debug/ListComp.csproj.AssemblyReference.cache
+/home/betterix/Code/School/Prog_2/13/HF/ListComp/ListComp/obj/Debug/ListComp.csproj.CoreCompileInputs.cache
+/home/betterix/Code/School/Prog_2/13/HF/ListComp/ListComp/obj/Debug/ListComp.exe
+/home/betterix/Code/School/Prog_2/13/HF/ListComp/ListComp/obj/Debug/ListComp.pdb

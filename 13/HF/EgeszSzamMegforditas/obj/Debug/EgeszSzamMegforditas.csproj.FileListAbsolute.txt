@@ -1,0 +1,6 @@
+/home/betterix/Code/School/Prog_2/13/HF/EgeszSzamMegforditas/bin/Debug/EgeszSzamMegforditas.exe
+/home/betterix/Code/School/Prog_2/13/HF/EgeszSzamMegforditas/bin/Debug/EgeszSzamMegforditas.pdb
+/home/betterix/Code/School/Prog_2/13/HF/EgeszSzamMegforditas/obj/Debug/EgeszSzamMegforditas.csproj.AssemblyReference.cache
+/home/betterix/Code/School/Prog_2/13/HF/EgeszSzamMegforditas/obj/Debug/EgeszSzamMegforditas.csproj.CoreCompileInputs.cache
+/home/betterix/Code/School/Prog_2/13/HF/EgeszSzamMegforditas/obj/Debug/EgeszSzamMegforditas.exe
+/home/betterix/Code/School/Prog_2/13/HF/EgeszSzamMegforditas/obj/Debug/EgeszSzamMegforditas.pdb
