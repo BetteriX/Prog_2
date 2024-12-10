@@ -1,0 +1,6 @@
+/home/betterix/Code/School/Prog_2/14/HarmadikFeladat/bin/Debug/HarmadikFeladat.exe
+/home/betterix/Code/School/Prog_2/14/HarmadikFeladat/bin/Debug/HarmadikFeladat.pdb
+/home/betterix/Code/School/Prog_2/14/HarmadikFeladat/obj/Debug/HarmadikFeladat.csproj.AssemblyReference.cache
+/home/betterix/Code/School/Prog_2/14/HarmadikFeladat/obj/Debug/HarmadikFeladat.csproj.CoreCompileInputs.cache
+/home/betterix/Code/School/Prog_2/14/HarmadikFeladat/obj/Debug/HarmadikFeladat.exe
+/home/betterix/Code/School/Prog_2/14/HarmadikFeladat/obj/Debug/HarmadikFeladat.pdb

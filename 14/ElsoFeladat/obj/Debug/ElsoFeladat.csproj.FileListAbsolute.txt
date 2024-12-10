@@ -1,0 +1,6 @@
+/home/betterix/Code/School/Prog_2/14/ElsoFeladat/bin/Debug/ElsoFeladat.exe
+/home/betterix/Code/School/Prog_2/14/ElsoFeladat/bin/Debug/ElsoFeladat.pdb
+/home/betterix/Code/School/Prog_2/14/ElsoFeladat/obj/Debug/ElsoFeladat.csproj.AssemblyReference.cache
+/home/betterix/Code/School/Prog_2/14/ElsoFeladat/obj/Debug/ElsoFeladat.csproj.CoreCompileInputs.cache
+/home/betterix/Code/School/Prog_2/14/ElsoFeladat/obj/Debug/ElsoFeladat.exe
+/home/betterix/Code/School/Prog_2/14/ElsoFeladat/obj/Debug/ElsoFeladat.pdb
