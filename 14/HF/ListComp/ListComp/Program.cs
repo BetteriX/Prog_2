@@ -3,22 +3,36 @@ using System.Linq;
 
 namespace ListComp
 {
+    // A this miatt fontos a static!
+    public static class StringExtension
+    {
+        public static string Capitalize(this string str)
+        {
+            return char.ToUpper(str[0]) + str.Substring(1);
+        }
+    }
     internal class Program
     {
         public static void Main(string[] args)
         { 
+            // A select akkor kell hogyha modosítani akarjuk!
             // 1 feladat
         var words = new[] { "auto", "villamos", "metro" };
-        var result1 = words.Select(word => word.ToUpper() + "!").ToList();
+        var result1 = words
+            .Select(word => word.ToUpper() + "!")
+            .ToList();
         Console.WriteLine(string.Join(", ", result1));
 
         // 2 feladat
         var names = new[] { "aladar", "bela", "cecil" };
-        var result2 = names.Select(name => Char.ToUpper(name[0]) + name.Substring(1)).ToList();
+        var result2 = names.Select(name => name.Capitalize()).ToList();
         Console.WriteLine(string.Join(", ", result2));
 
         // 3 feladat
-        var zeros = Enumerable.Repeat(0, 10).ToList();
+        //int[] zeros = new int[10];
+        //var input = PyUtils.Range(10);
+        //var zeros = input.Select(x => 0).ToList();
+        var zeros = Enumerable.Repeat(0, 10).ToList(); // FONTOS!
         Console.WriteLine(string.Join(", ", zeros));
 
         // 4 feladat

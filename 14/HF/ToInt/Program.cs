@@ -1,4 +1,6 @@
-﻿namespace ToInt
+﻿using System;
+
+namespace ToInt
 {
     public static class Extension
     {
@@ -10,8 +12,6 @@
     
     internal class Program
     {
-        
-        
         public static void Main(string[] args)
         {
             string s = "42";
