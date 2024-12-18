@@ -1,0 +1,15 @@
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\bin\Debug\net8.0\feladat3.exe
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\bin\Debug\net8.0\feladat3.deps.json
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\bin\Debug\net8.0\feladat3.runtimeconfig.json
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\bin\Debug\net8.0\feladat3.dll
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\bin\Debug\net8.0\feladat3.pdb
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\obj\Debug\net8.0\feladat3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\obj\Debug\net8.0\feladat3.AssemblyInfoInputs.cache
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\obj\Debug\net8.0\feladat3.AssemblyInfo.cs
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\obj\Debug\net8.0\feladat3.csproj.CoreCompileInputs.cache
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\obj\Debug\net8.0\feladat3.sourcelink.json
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\obj\Debug\net8.0\feladat3.dll
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\obj\Debug\net8.0\refint\feladat3.dll
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\obj\Debug\net8.0\feladat3.pdb
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\obj\Debug\net8.0\feladat3.genruntimeconfig.cache
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\allomanyok\feladat3\obj\Debug\net8.0\ref\feladat3.dll
