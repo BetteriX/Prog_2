@@ -1,0 +1,15 @@
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\bin\Debug\net8.0\feladat1.exe
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\bin\Debug\net8.0\feladat1.deps.json
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\bin\Debug\net8.0\feladat1.runtimeconfig.json
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\bin\Debug\net8.0\feladat1.dll
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\bin\Debug\net8.0\feladat1.pdb
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\obj\Debug\net8.0\feladat1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\obj\Debug\net8.0\feladat1.AssemblyInfoInputs.cache
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\obj\Debug\net8.0\feladat1.AssemblyInfo.cs
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\obj\Debug\net8.0\feladat1.csproj.CoreCompileInputs.cache
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\obj\Debug\net8.0\feladat1.sourcelink.json
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\obj\Debug\net8.0\feladat1.dll
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\obj\Debug\net8.0\refint\feladat1.dll
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\obj\Debug\net8.0\feladat1.pdb
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\obj\Debug\net8.0\feladat1.genruntimeconfig.cache
+C:\Users\Zsolt\Documents\Code\School\Prog_2\!2.ZH_gyak\potZH\Pelda_Peter_AB12C3\feladat1\feladat1\obj\Debug\net8.0\ref\feladat1.dll
