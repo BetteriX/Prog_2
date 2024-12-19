@@ -1,37 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat1\\feladat1\\",
+  "WorkspaceRootPath": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!3.ZH_gyak\\feladat1\\feladat1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80BF15B8-0E7E-4795-A242-8C05A5D5BEE1}|..\\..\\feladat4\\feladat4\\feladat4.csproj|c:\\users\\zsolt\\documents\\code\\school\\prog_2\\!2.zh_gyak\\potzh\\pelda_peter_ab12c3\\feladat4\\feladat4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1A931D8-FF17-4A7C-BA79-29EEB4FE8349}|..\\..\\feladat3\\feladat3\\feladat3.csproj|c:\\users\\zsolt\\documents\\code\\school\\prog_2\\!2.zh_gyak\\potzh\\pelda_peter_ab12c3\\feladat3\\feladat3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat1\\feladat4\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{400D23AB-4A2C-4475-BF5C-BC7AA53027F4}|feladat1.csproj|c:\\users\\zsolt\\documents\\code\\school\\prog_2\\!2.zh_gyak\\potzh\\pelda_peter_ab12c3\\feladat1\\feladat1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{400D23AB-4A2C-4475-BF5C-BC7AA53027F4}|feladat1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{400D23AB-4A2C-4475-BF5C-BC7AA53027F4}|feladat1.csproj|c:\\users\\zsolt\\documents\\code\\school\\prog_2\\!2.zh_gyak\\potzh\\pelda_peter_ab12c3\\feladat1\\feladat1\\feladat1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{400D23AB-4A2C-4475-BF5C-BC7AA53027F4}|feladat1.csproj|solutionrelative:feladat1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9B6711B-1EA9-4F04-AF38-3FC08A9787AF}|..\\..\\feladat2\\feladat2\\feladat2.csproj|c:\\users\\zsolt\\documents\\code\\school\\prog_2\\!2.zh_gyak\\potzh\\pelda_peter_ab12c3\\feladat2\\feladat2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{400D23AB-4A2C-4475-BF5C-BC7AA53027F4}|feladat1.csproj|c:\\users\\zsolt\\documents\\code\\school\\prog_2\\!2.zh_gyak\\potzh\\pelda_peter_ab12c3\\feladat1\\feladat1\\superhero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{400D23AB-4A2C-4475-BF5C-BC7AA53027F4}|feladat1.csproj|c:\\users\\zsolt\\documents\\code\\school\\prog_2\\!3.zh_gyak\\feladat1\\feladat1\\superhero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{400D23AB-4A2C-4475-BF5C-BC7AA53027F4}|feladat1.csproj|solutionrelative:superhero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9B6711B-1EA9-4F04-AF38-3FC08A9787AF}|..\\..\\feladat2\\feladat2\\feladat2.csproj|c:\\users\\zsolt\\documents\\code\\school\\prog_2\\!2.zh_gyak\\potzh\\pelda_peter_ab12c3\\feladat2\\feladat2\\superhero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{400D23AB-4A2C-4475-BF5C-BC7AA53027F4}|feladat1.csproj|c:\\users\\zsolt\\documents\\code\\school\\prog_2\\!2.zh_gyak\\potzh\\pelda_peter_ab12c3\\feladat1\\feladat1\\.editorconfig||{68B46364-D378-42F2-9E72-37D86C5F4468}",
-      "RelativeMoniker": "D:0:0:{400D23AB-4A2C-4475-BF5C-BC7AA53027F4}|feladat1.csproj|solutionrelative:.editorconfig||{68B46364-D378-42F2-9E72-37D86C5F4468}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,111 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat4\\feladat4\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\feladat4\\feladat4\\Program.cs",
-              "ToolTip": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat4\\feladat4\\Program.cs",
-              "RelativeToolTip": "..\\..\\feladat4\\feladat4\\Program.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAAEIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T15:17:47.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat1\\feladat4\\Program.cs",
-              "RelativeDocumentMoniker": "..\\feladat4\\Program.cs",
-              "ToolTip": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat1\\feladat4\\Program.cs",
-              "RelativeToolTip": "..\\feladat4\\Program.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T15:10:34.479Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat3\\feladat3\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\feladat3\\feladat3\\Program.cs",
-              "ToolTip": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat3\\feladat3\\Program.cs",
-              "RelativeToolTip": "..\\..\\feladat3\\feladat3\\Program.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwCQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T14:58:52.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "feladat1.csproj",
-              "DocumentMoniker": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat1\\feladat1\\feladat1.csproj",
-              "RelativeDocumentMoniker": "feladat1.csproj",
-              "ToolTip": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat1\\feladat1\\feladat1.csproj",
-              "RelativeToolTip": "feladat1.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-18T14:50:07.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "Superhero.cs",
-              "DocumentMoniker": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat2\\feladat2\\Superhero.cs",
-              "RelativeDocumentMoniker": "..\\..\\feladat2\\feladat2\\Superhero.cs",
-              "ToolTip": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat2\\feladat2\\Superhero.cs",
-              "RelativeToolTip": "..\\..\\feladat2\\feladat2\\Superhero.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T14:49:13.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat2\\feladat2\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\feladat2\\feladat2\\Program.cs",
-              "ToolTip": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat2\\feladat2\\Program.cs",
-              "RelativeToolTip": "..\\..\\feladat2\\feladat2\\Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAADwvw8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T14:48:41.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": ".editorconfig",
-              "DocumentMoniker": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat1\\feladat1\\.editorconfig",
-              "RelativeDocumentMoniker": ".editorconfig",
-              "ToolTip": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat1\\feladat1\\.editorconfig",
-              "RelativeToolTip": ".editorconfig",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-18T14:02:08.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Superhero.cs",
-              "DocumentMoniker": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat1\\feladat1\\Superhero.cs",
+              "DocumentMoniker": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!3.ZH_gyak\\feladat1\\feladat1\\Superhero.cs",
               "RelativeDocumentMoniker": "Superhero.cs",
-              "ToolTip": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat1\\feladat1\\Superhero.cs",
+              "ToolTip": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!3.ZH_gyak\\feladat1\\feladat1\\Superhero.cs",
               "RelativeToolTip": "Superhero.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAD4vxUAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T13:58:51.829Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat1\\feladat1\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Zsolt\\Documents\\Code\\School\\Prog_2\\!2.ZH_gyak\\potZH\\Pelda_Peter_AB12C3\\feladat1\\feladat1\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T13:57:16.37Z",
+              "WhenOpened": "2024-12-19T08:32:49.649Z",
               "EditorCaption": ""
             }
           ]
